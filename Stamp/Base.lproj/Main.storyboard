@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Stamp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="zMm-HI-9jG">
+                                <rect key="frame" x="0.0" y="44" width="414" height="638"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vlH-E4-L5m">
+                                <rect key="frame" x="20" y="692" width="374" height="170"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="KuM-Cw-1Vk">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="85"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c42-Da-tt9">
+                                                <rect key="frame" x="0.0" y="0.0" width="78.5" height="85"/>
+                                                <state key="normal" title="Button" image="hana"/>
+                                                <connections>
+                                                    <action selector="selectedFirst" destination="BYZ-38-t0r" eventType="touchUpInside" id="7cK-5E-oHW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Oo-KO-4gZ">
+                                                <rect key="frame" x="98.5" y="0.0" width="78.5" height="85"/>
+                                                <state key="normal" title="Button" image="hoshi"/>
+                                                <connections>
+                                                    <action selector="selectedSecond" destination="BYZ-38-t0r" eventType="touchUpInside" id="oAB-rO-gcR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPM-rP-eej">
+                                                <rect key="frame" x="197" y="0.0" width="78.5" height="85"/>
+                                                <state key="normal" title="Button" image="onpu"/>
+                                                <connections>
+                                                    <action selector="selectedThird" destination="BYZ-38-t0r" eventType="touchUpInside" id="mQJ-sN-DGZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G90-3S-Rd2">
+                                                <rect key="frame" x="295.5" y="0.0" width="78.5" height="85"/>
+                                                <state key="normal" title="Button" image="shitumon"/>
+                                                <connections>
+                                                    <action selector="selectedFourth" destination="BYZ-38-t0r" eventType="touchUpInside" id="NTu-Z8-P3c"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eaQ-bW-kmY">
+                                        <rect key="frame" x="0.0" y="85" width="374" height="85"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMk-4A-dKO">
+                                                <rect key="frame" x="0.0" y="0.0" width="111.5" height="85"/>
+                                                <color key="backgroundColor" red="1" green="0.70588235290000001" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="もどる"/>
+                                                <connections>
+                                                    <action selector="back" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZlQ-aO-y33"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEq-Fd-pBe">
+                                                <rect key="frame" x="131.5" y="0.0" width="111" height="85"/>
+                                                <color key="backgroundColor" red="1" green="0.70588235290000001" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="画像"/>
+                                                <connections>
+                                                    <action selector="selectBackground" destination="BYZ-38-t0r" eventType="touchUpInside" id="t4d-k9-y5s"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Nx-6k-kC0">
+                                                <rect key="frame" x="262.5" y="0.0" width="111.5" height="85"/>
+                                                <color key="backgroundColor" red="1" green="0.70588235290000001" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="保存"/>
+                                                <connections>
+                                                    <action selector="save" destination="BYZ-38-t0r" eventType="touchUpInside" id="vry-lS-sb8"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zMm-HI-9jG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9Oz-Zg-NM0"/>
+                            <constraint firstItem="vlH-E4-L5m" firstAttribute="top" secondItem="zMm-HI-9jG" secondAttribute="bottom" constant="10" id="FLg-Kh-vfp"/>
+                            <constraint firstItem="vlH-E4-L5m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="P7Q-P5-8Ci"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vlH-E4-L5m" secondAttribute="trailing" constant="20" id="XgW-wO-KF9"/>
+                            <constraint firstItem="zMm-HI-9jG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hJq-oF-jQr"/>
+                            <constraint firstItem="vlH-E4-L5m" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ufv-hD-Pnw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zMm-HI-9jG" secondAttribute="bottom" constant="180" id="vnQ-w0-n9b"/>
+                            <constraint firstItem="zMm-HI-9jG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zcN-ag-0Wh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="haikeiImageView" destination="zMm-HI-9jG" id="E7I-we-wGB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54" y="17"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="640" height="1136"/>
+        <image name="hana" width="300" height="300"/>
+        <image name="hoshi" width="300" height="300"/>
+        <image name="onpu" width="300" height="300"/>
+        <image name="shitumon" width="330" height="330"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
